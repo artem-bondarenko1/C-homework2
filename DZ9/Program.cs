@@ -4,21 +4,21 @@
 // 9012 -> 12
 
 Console.Write("Введите число: ");
-int numberN = Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 
-  int SumNumber(int numberN){
+  int SumNumber(int number){
     
-    int counter = Convert.ToString(numberN).Length;
+    int counter = Convert.ToString(number).Length;
     int advance = 0;
     int result = 0;
 
     for (int i = 0; i < counter; i++){
-      advance = numberN - numberN % 10;
-      result = result + (numberN - advance);
-      numberN = numberN / 10;
+      advance = number - number % 10;
+      result = result + (number - advance);
+      number = number / 10;
     }
    return result;
   }
 
-int sumNumber = SumNumber(numberN);
+int sumNumber = SumNumber(number);
 Console.WriteLine("Сумма цифр в числе: " + sumNumber);
