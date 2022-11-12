@@ -1,6 +1,6 @@
 ﻿// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
-Console.Write("Введите ряд чисел, разделенных запятой : ");
+Console.Write("Введите числа через запятую: ");
 string? seriesOfNumbers = Console.ReadLine();
 
 seriesOfNumbers = seriesOfNumbers + ",";    
@@ -26,7 +26,7 @@ void СheckNumber2 (int  series){
       {
       }
         else {
-          Console.WriteLine($"Ошибка ввода  символа. Вводи цифры.");
+          Console.WriteLine("Ошибка ввода символа. Вводите цифры.");
 
       }
 }
